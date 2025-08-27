@@ -1,0 +1,292 @@
+.project-title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.startup-project-text img {
+  max-width: 50%;
+  height: auto;
+}
+
+.repo-cards-div-main {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  perspective: 1000px;
+  margin: 50px 0;
+}
+
+/* Support Pillars */
+.support-pillar {
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  bottom: 0;
+  background: linear-gradient(to bottom, #8b9dc3, #3f4c6b);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+.support-pillar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 35px;
+  height: 10px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.left-pillar {
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.right-pillar {
+  right: 20%;
+  transform: translateX(50%);
+}
+
+/* Roller Coaster Track */
+.roller-coaster-track {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 150px;
+  box-shadow: 
+    0 10px 20px rgba(0,0,0,0.2),
+    inset 0 5px 10px rgba(255,255,255,0.2),
+    inset 0 -5px 10px rgba(0,0,0,0.2);
+  animation: trackPulse 4s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.roller-coaster-track::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: 3px dashed rgba(255,255,255,0.3);
+  animation: trackRotate 20s linear infinite;
+}
+
+/* Rotating Carousel Container */
+.project-carousel {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: carouselRotate 20s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* Individual Project Cards */
+.repo-card-hanging {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform-origin: center top;
+  animation: cardSwing 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+}
+
+.repo-card-hanging .repo-card-div {
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0) !important;
+  border: 2px solid #e0e0e0;
+  box-shadow: 
+    0 8px 16px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.repo-card-hanging .repo-card-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 12px 24px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* Hanging Chain/Cable */
+.repo-card-hanging::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 3px;
+  height: 50px;
+  background: linear-gradient(to bottom, #ffd700, #ffb347);
+  transform: translateX(-50%);
+  box-shadow: 
+    0 0 8px rgba(255, 215, 0, 0.6),
+    inset 1px 0 0 rgba(255,255,255,0.3);
+  border-radius: 2px;
+}
+
+/* Chain connectors */
+.repo-card-hanging::after {
+  content: '';
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #ffd700, #b8860b);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 2px solid #b8860b;
+}
+
+/* Position each card around the circle */
+.repo-card-hanging:nth-child(1) {
+  transform: translate(-50%, -50%) rotateZ(0deg) translateY(-175px) rotateZ(0deg);
+}
+.repo-card-hanging:nth-child(2) {
+  transform: translate(-50%, -50%) rotateZ(60deg) translateY(-175px) rotateZ(-60deg);
+}
+.repo-card-hanging:nth-child(3) {
+  transform: translate(-50%, -50%) rotateZ(120deg) translateY(-175px) rotateZ(-120deg);
+}
+.repo-card-hanging:nth-child(4) {
+  transform: translate(-50%, -50%) rotateZ(180deg) translateY(-175px) rotateZ(-180deg);
+}
+.repo-card-hanging:nth-child(5) {
+  transform: translate(-50%, -50%) rotateZ(240deg) translateY(-175px) rotateZ(-240deg);
+}
+.repo-card-hanging:nth-child(6) {
+  transform: translate(-50%, -50%) rotateZ(300deg) translateY(-175px) rotateZ(-300deg);
+}
+
+/* Animations */
+@keyframes carouselRotate {
+  0% { transform: translate(-50%, -50%) rotateZ(0deg); }
+  100% { transform: translate(-50%, -50%) rotateZ(360deg); }
+}
+
+@keyframes cardSwing {
+  0% { transform: translate(-50%, -50%) rotateZ(var(--rotation)) translateY(-175px) rotateZ(calc(-1 * var(--rotation))) rotateX(-3deg) rotateY(-2deg); }
+  50% { transform: translate(-50%, -50%) rotateZ(var(--rotation)) translateY(-175px) rotateZ(calc(-1 * var(--rotation))) rotateX(0deg) rotateY(0deg); }
+  100% { transform: translate(-50%, -50%) rotateZ(var(--rotation)) translateY(-175px) rotateZ(calc(-1 * var(--rotation))) rotateX(3deg) rotateY(2deg); }
+}
+
+@keyframes trackPulse {
+  0% { box-shadow: 0 10px 20px rgba(0,0,0,0.2), inset 0 5px 10px rgba(255,255,255,0.2), inset 0 -5px 10px rgba(0,0,0,0.2); }
+  100% { box-shadow: 0 15px 30px rgba(0,0,0,0.3), inset 0 8px 15px rgba(255,255,255,0.3), inset 0 -8px 15px rgba(0,0,0,0.3); }
+}
+
+@keyframes trackRotate {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Hover Effects */
+.repo-card-hanging:hover {
+  animation-play-state: paused;
+  transform: translate(-50%, -50%) rotateZ(var(--rotation)) translateY(-175px) rotateZ(calc(-1 * var(--rotation))) scale(1.1) !important;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+  
+  .repo-cards-div-main {
+    height: 500px;
+  }
+  
+  .roller-coaster-track {
+    width: 90%;
+    height: 250px;
+  }
+  
+  .project-carousel {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .repo-card-hanging {
+    width: 250px;
+  }
+  
+  .repo-card-hanging:nth-child(1),
+  .repo-card-hanging:nth-child(2),
+  .repo-card-hanging:nth-child(3),
+  .repo-card-hanging:nth-child(4),
+  .repo-card-hanging:nth-child(5),
+  .repo-card-hanging:nth-child(6) {
+    transform: translate(-50%, -50%) rotateZ(var(--rotation, 0deg)) translateY(-150px) rotateZ(calc(-1 * var(--rotation, 0deg)));
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .repo-cards-div-main {
+    height: 400px;
+    margin: 30px 0;
+  }
+  
+  .roller-coaster-track {
+    width: 85%;
+    height: 200px;
+  }
+  
+  .project-carousel {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .repo-card-hanging {
+    width: 200px;
+  }
+  
+  .repo-card-hanging .repo-card-div {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .repo-card-hanging:nth-child(1),
+  .repo-card-hanging:nth-child(2),
+  .repo-card-hanging:nth-child(3),
+  .repo-card-hanging:nth-child(4),
+  .repo-card-hanging:nth-child(5),
+  .repo-card-hanging:nth-child(6) {
+    transform: translate(-50%, -50%) rotateZ(var(--rotation, 0deg)) translateY(-125px) rotateZ(calc(-1 * var(--rotation, 0deg)));
+  }
+  
+  /* Slower animation on mobile for better visibility */
+  .project-carousel {
+    animation: carouselRotate 30s linear infinite;
+  }
+  
+  .roller-coaster-track::before {
+    animation: trackRotate 30s linear infinite;
+  }
+}

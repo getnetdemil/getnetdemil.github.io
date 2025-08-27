@@ -1,0 +1,498 @@
+/* Education Timeline Container */
+.education-timeline-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Simple Zigzag Connection Lines */
+.education-timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.education-timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(90deg, #D4A574, #B8956A);
+  z-index: 1;
+}
+
+.education-timeline-item.timeline-left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.education-timeline-item.timeline-left:not(:last-child)::after {
+  right: 3%;
+  transform: rotate(12deg);
+  transform-origin: right center;
+}
+
+.education-timeline-item.timeline-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+
+.education-timeline-item.timeline-right:not(:last-child)::after {
+  left: 3%;
+  transform: rotate(-12deg);
+  transform-origin: left center;
+}
+
+/* Timeline Marker */
+.education-timeline-marker {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+}
+
+.education-timeline-item.timeline-left .education-timeline-marker {
+  left: -25px;
+}
+
+.education-timeline-item.timeline-right .education-timeline-marker {
+  right: -25px;
+}
+
+/* Timeline Dot */
+.timeline-dot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-dot {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #D4A574, #B8956A);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-dot:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+}
+
+.dot-inner {
+  font-size: 16px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline Content - Enlarged Horizontally */
+.education-timeline-content {
+  max-width: 650px;
+  width: 100%;
+}
+
+/* Education Card - Horizontally Optimized */
+.education-card {
+  background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
+  border-radius: 16px;
+  padding: 28px 36px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    0 3px 12px rgba(0, 0, 0, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(212, 165, 116, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  border-color: rgba(212, 165, 116, 0.2);
+}
+
+/* Card Header - Two Column Layout */
+.education-card-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.university-info {
+  min-width: 0; /* Allow text truncation if needed */
+}
+
+.university-title {
+  font-family: "Inter", "Google Sans Medium", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.degree-subtitle {
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: #4a5568;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.degree-duration {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #D4A574;
+  background: rgba(212, 165, 116, 0.12);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 165, 116, 0.25);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.degree-duration::before {
+  content: '📅';
+  margin-right: 8px;
+}
+
+
+/* Card Body - Horizontal Grid Layout */
+.education-card-body {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
+
+.degree-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.degree-description {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #2d3748;
+}
+
+.description-bullet {
+  color: #D4A574;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.description-text {
+  flex: 1;
+}
+
+/* Card Footer */
+.education-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visit-website-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #D4A574 0%, #B8956A 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-family: "Inter", "Google Sans Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.visit-website-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.visit-website-btn:hover::before {
+  left: 100%;
+}
+
+.visit-website-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.4);
+}
+
+.visit-website-btn::after {
+  content: '→';
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.visit-website-btn:hover::after {
+  transform: translateX(4px);
+}
+
+.card-subtitle {
+  font-family: "Google Sans Medium";
+  font-size: 18px;
+  /* color: #000000; */
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #d9dbdf;
+  /* background-color: #6c63ff; */
+  /* background: transparent; */
+  box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+.body-header {
+  max-width: inherit;
+  display: flex;
+  /* width: 100%; */
+  /* background-color:#6c63ff99; */
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+}
+
+.body-header-title {
+  align-items: flex-start;
+  width: 80%;
+}
+
+.body-header-duration {
+  width: 20%;
+}
+.duration {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  /* color: #212121; */
+  padding-right: 10px;
+  float: right;
+}
+
+.body-content {
+  max-width: inherit;
+  /* width: 100%; */
+  border-radius: 0px 0px 7px 7px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 5px 5px 5px #d3d3d3; */
+}
+
+.content-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Google Sans Regular";
+}
+
+.card-body {
+  /* background-color: #00FF00; */
+  border-bottom: 1px solid #d9dbdf;
+  border-left: 1px solid #d9dbdf;
+  border-right: 1px solid #d9dbdf;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+.visit-btn {
+  /* background-color: #6c63ff99; */
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  float: right;
+}
+
+.visit-btn:hover {
+  /* background-color:#6c63ffcc; */
+}
+
+.btn {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Google Sans Regular";
+  /* color: #000000; */
+}
+
+@media (max-width: 1380px) {
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .education-timeline-content {
+    max-width: 580px;
+  }
+  
+  .education-card {
+    padding: 24px 30px;
+  }
+  
+  .university-title {
+    font-size: 24px;
+  }
+  
+  .degree-subtitle {
+    font-size: 17px;
+  }
+  
+  .degree-descriptions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-timeline-container {
+    padding: 30px 15px;
+  }
+  
+  .education-timeline-item {
+    margin-bottom: 50px;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  
+  .education-timeline-item::after {
+    display: none; /* Hide connection lines on mobile */
+  }
+  
+  .education-timeline-item.timeline-left .education-timeline-marker,
+  .education-timeline-item.timeline-right .education-timeline-marker {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    top: -20px;
+  }
+  
+  .education-timeline-content {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  
+  .timeline-dot {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .dot-inner {
+    font-size: 14px;
+  }
+  
+  .education-card {
+    padding: 24px;
+  }
+  
+  .education-card-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .education-card-body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .university-title {
+    font-size: 22px;
+  }
+  
+  .degree-subtitle {
+    font-size: 16px;
+  }
+  
+  .degree-duration {
+    justify-self: center;
+  }
+  
+  .degree-descriptions {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .degree-description {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .education-card-footer {
+    justify-content: center;
+  }
+  
+  .visit-website-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-timeline-container {
+    padding: 25px 10px;
+  }
+  
+  .education-timeline-content {
+    margin-top: 35px;
+  }
+  
+  .timeline-dot {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .dot-inner {
+    font-size: 14px;
+  }
+  
+  .education-card {
+    padding: 20px;
+  }
+  
+  .university-title {
+    font-size: 20px;
+  }
+  
+  .degree-subtitle {
+    font-size: 15px;
+  }
+}

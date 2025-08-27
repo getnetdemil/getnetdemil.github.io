@@ -1,0 +1,286 @@
+{
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "masterPortfolio",
+      "createdAt": "2024-01-06T16:26:54Z",
+      "url": "https://github.com/getnetdemil/masterPortfolio",
+      "description": " Customizable Portfolio website Templeate for any Professionals",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+      {
+          "id": "VR6-jAHfL7iP",
+          "name": "Vision Aided Recognition of Objects to Grasp with a Robot Arm, 6D Pose Estimation",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://www.overleaf.com/read/sdqdmvdwwtmd#fbbe29",
+          "description": "This project utilizes a vision-aided prosthesis arm to assist individuals with upper limb disabilities in picking up utensils more easily. It employs the DenseFusion algorithm for 6D object pose estimation using RGB, depth, and binary mask images.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "W3n6EnQoFh9z",
+          "name": "Crop Field Image Segmentation",
+          "createdAt": "2023-10-01T00:00:00Z",
+          "url": "https://www.overleaf.com/read/ymwsmntfrpmr#2bdf2a",
+          "description": "This project focuses on segmenting crop field images using various deep learning models, including U-Net, Attention U-Net, and DeepLabV3+. The goal is to accurately identify crops and weeds to facilitate precise weed control for improved crop yield.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Explainable AI Projects",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://www.overleaf.com/read/qrfxynkvbfbp#33a234",
+          "description": "This project explores various aspects of Explainable AI, including gaze fixation density maps, saliency maps, blackbox and white-box explanation methods, and evaluations of feature attribution methods.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "3D Tetris Game using Augmented Reality",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://gitlab.emi.u-bordeaux.fr/tlengfeld/ar-tetris-app",
+          "description": "This project involves the development of a 3D Tetris game using Augmented Reality (AR) technology, providing an immersive gaming experience by integrating virtual blocks with the real-world environment.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Unity",
+                  "iconifyClass": "logos-unity"
+              },
+              {
+                  "name":"C#",
+                  "iconifyClass": "devicon:csharp"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "AI-Based Real-Time Fitness Assistance",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://github.com/getnetdemil/Real--Time-Fitness-Assistance-",
+          "description": "This project focuses on providing real-time fitness assistance using artificial intelligence techniques. It aims to offer personalized feedback and guidance to users during their workouts to help improve their form and performance.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Acquisition and Reconstruction Projects",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://github.com/getnetdemil/Acquisition-and-Reconstruction-Projects",
+          "description": "This project involves various acquisition and reconstruction projects, including 3D object and scene reconstruction using camera calibration and feature matching techniques.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Computer Vision Projects in Object Detection and Tracking",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://github.com/getnetdemil/Computer-Vision-Object-Detection-Tracking",
+          "description": "This research project focuses on computer vision techniques for object detection and tracking, including methods such as particle filters, Kalman filters, and video segmentation, with applications in surveillance and autonomous vehicles.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "C++",
+                  "iconifyClass": "devicon:cplusplus"
+
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Advanced Projects in People Detection and Biometric Recognition",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://github.com/getnetdemil/Advanced-People-Detection-Biometric-Recognition",
+          "description": "This project explores advanced techniques in people detection and biometric recognition, covering areas such as YOLOv5 for people detection, signature recognition, face recognition, deepfake recognition, and biometric data recognition (fingerprint, iris, voice).",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Multi-Database Evaluation and Enhancement of DeepFake Detection Systems",
+          "createdAt": "2023-10-13T20:41:33Z",
+          "url": "https://github.com/getnetdemil/Multi-Database-DeepFake-Detection",
+          "description": "As part of a course on people detection and biometric recognition, this project involves evaluating and enhancing deepfake detection systems using multiple databases. It includes techniques such as YOLOv5 for people detection and deepfake recognition.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Predicting Air Pressure System (APS) Failure at Scania Truck",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Predicting-Air-Prusser-System-Failure-at-Scania-Truck",
+          "description": "This project focuses on predicting air pressure system (APS) failure in Scania trucks using machine learning techniques, with the aim of improving maintenance strategies and reducing downtime.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Python",
+                  "iconifyClass": "logos-python"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Heart (Murmur Sound) Diseases Classification using Machine Learning",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Heart-Disease-Classification",
+          "description": "This project involves classifying heart diseases based on murmurs using machine learning techniques. It aims to assist in early diagnosis and treatment planning.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Matlab",
+                  "iconifyClass": "devicon:matlab"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Custom Data Processing Program",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Votting-Ballot-Paper-Detector",
+          "description": "This project involves the development of a custom data processing program for page alignment, optical marker detection, and handwritten data digitization, facilitating efficient data processing and analysis.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Matlab",
+                  "iconifyClass": "devicon:matlab"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Custom Coin Detector and Identifier",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Coin-detector-and-Identifier",
+          "description": "This project involves the development of a custom coin detector and identifier using computer vision techniques, enabling accurate currency quantification from images.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Matlab",
+                  "iconifyClass": "devicon:matlab"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Aerial Image Restoration and Land Type Identification System",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Image-Recovery-and-Texture-Identification",
+          "description": "This project involves the development of an aerial image restoration and land type identification system using customized deconvolution and texture analysis techniques, facilitating accurate land type identification from aerial images.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Matlab",
+                  "iconifyClass": "devicon:matlab"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Custom Human Action Classifier",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Human-Action-Identifier-Based-on-Video-Squance",
+          "description": "This project involves the development of a custom human action classifier using 3D GLOH descriptors and Support Vector Machine (SVM) techniques, enabling accurate classification of human actions from video data.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "Matlab",
+                  "iconifyClass": "devicon:matlab"
+              }
+          ]
+      },
+      {
+          "id": "R_kgDOG_vYHA",
+          "name": "Performance Analysis of 60-120 GHz mmWave Ranges Radio Over Fiber",
+          "createdAt": "2022-01-01T00:00:00Z",
+          "url": "https://github.com/getnetdemil/Performance-Analysis-mmWave-Radio-Over-Fiber",
+          "description": "This project involves the performance analysis of 60-120 GHz mmWave ranges Radio Over Fiber (ROF) systems with a Multi-Input Multi-Output (MIMO) architecture, providing insights into the system's performance and potential enhancements.",
+          "isFork": false,
+          "languages": [
+              {
+                  "name": "OptiSystem",
+                  "iconifyClass": "devicon:opti"
+              }
+          ]
+      },
+      {
+        "id": "R_kgDOG_vYHA",
+        "name": "Design and Implementation of Smart Microscope For Automatic Protozoan Disease Detection and Diagnosis Using Python Programming Language",
+        "createdAt": "20218-01-01T00:00:00Z",
+        "url": "https://github.com/getnetdemil/Performance-Analysis-mmWave-Radio-Over-Fiber",
+        "description": "Design and Implementation of Smart Microscope For Automatic Protozoan Disease Detection and Diagnosis Using Python Programming Language",
+        "isFork": false,
+        "languages": [
+            {
+                "name": "Python",
+                "iconifyClass": "logos-python"
+            }
+        ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Design of Smart Microscope for Amoeba Disease Detection Using MATLAB Programing Language",
+      "createdAt": "2017-01-01T00:00:00Z",
+      "url": "https://github.com/getnetdemil/Performance-Analysis-mmWave-Radio-Over-Fiber",
+      "description": "Design of Smart Microscope for Amoeba Disease Detection Using MATLAB Programing Language",
+      "isFork": false,
+      "languages": [
+          {
+              "name": "Matlab",
+              "iconifyClass": "devicon:matlab"
+          }
+      ]
+  }
+
+  
+
+  ]
+}

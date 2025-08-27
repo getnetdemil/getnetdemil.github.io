@@ -1,0 +1,272 @@
+.slideshow-section {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.slideshow-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slideshow-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: "Google Sans Medium";
+}
+
+.slideshow-header p {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #000;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 40px 30px 20px;
+}
+
+.slide-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: "Google Sans Medium";
+}
+
+.slide-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.slide-location {
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* Navigation Controls */
+.slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.slide-nav:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slide-nav-prev {
+  left: 20px;
+}
+
+.slide-nav-next {
+  right: 20px;
+}
+
+.slide-play-pause {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.slide-play-pause:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Slide Indicators */
+.slide-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slide-indicator {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.slide-indicator:hover,
+.slide-indicator.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Image Counter */
+.slide-counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .slideshow-section {
+    margin-top: 40px;
+    padding: 20px 0;
+  }
+
+  .slideshow-header h2 {
+    font-size: 28px;
+  }
+
+  .slideshow-header p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .slideshow-container {
+    margin: 0 20px;
+  }
+
+  .slide-wrapper {
+    height: 300px;
+  }
+
+  .slide-overlay {
+    padding: 30px 20px 15px;
+  }
+
+  .slide-content h4 {
+    font-size: 18px;
+  }
+
+  .slide-content p {
+    font-size: 13px;
+  }
+
+  .slide-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .slide-nav-prev {
+    left: 10px;
+  }
+
+  .slide-nav-next {
+    right: 10px;
+  }
+
+  .slide-play-pause {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .slide-counter {
+    top: 15px;
+    left: 15px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-wrapper {
+    height: 250px;
+  }
+
+  .slideshow-header h2 {
+    font-size: 24px;
+  }
+
+  .slide-content h4 {
+    font-size: 16px;
+  }
+
+  .slide-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

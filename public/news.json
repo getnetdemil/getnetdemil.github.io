@@ -1,0 +1,24 @@
+{
+  "news": [
+    {
+      "id": "json_001",
+      "title": "New Research Publication - Snow Variable Estimation",
+      "date": "2025-01-15",
+      "category": "Publication",
+      "content": "Our comprehensive systematic literature review on advances in image-based estimation of snow variables has been published in the Journal of Hydrology. This research examines cutting-edge techniques for snow parameter estimation using various image sensors.",
+      "link": "https://doi.org/10.1016/j.jhydrol.2025.132855",
+      "image": "snow_research.jpg",
+      "tags": ["Research", "Snow Hydrology", "Deep Learning", "Remote Sensing"]
+    },
+    {
+      "id": "json_002",
+      "title": "Conference Presentation at Climate AI Workshop",
+      "date": "2024-07-20",
+      "category": "Conference",
+      "content": "Presented our latest research on leveraging social media for real-time climate impact monitoring at the SIGIR 2024 Workshop. The work demonstrates innovative approaches to using social media data for environmental monitoring.",
+      "link": "",
+      "image": "conference.jpg",
+      "tags": ["Climate Change", "Social Media", "AI", "SIGIR"]
+    }
+  ]
+}

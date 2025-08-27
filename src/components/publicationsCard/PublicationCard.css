@@ -1,0 +1,204 @@
+.publication-card-div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.publication-card-div:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.publication-card-div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.publication-type-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.publication-year {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.publication-content {
+  margin-bottom: 1.5rem;
+}
+
+.publication-title {
+  font-family: "Google Sans Regular";
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.publication-authors {
+  font-family: "Google Sans Regular";
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.publication-abstract {
+  font-family: "Google Sans Regular";
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.publication-venue {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.publication-venue i {
+  font-size: 0.8rem;
+}
+
+.publication-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.publication-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.stat-item i {
+  font-size: 0.7rem;
+}
+
+.publication-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.pub-link {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  background-color: rgba(102, 126, 234, 0.1);
+  transition: all 0.2s ease;
+}
+
+.pub-link:hover {
+  background-color: rgba(102, 126, 234, 0.2);
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publication-card-div {
+    padding: 1.5rem;
+  }
+
+  .publication-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .publication-title {
+    font-size: 1.2rem;
+  }
+
+  .publication-authors {
+    font-size: 0.85rem;
+  }
+
+  .publication-abstract {
+    font-size: 0.85rem;
+  }
+
+  .publication-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .publication-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-card-div {
+    padding: 1.2rem;
+    margin: 0 10px;
+  }
+
+  .publication-title {
+    font-size: 1.1rem;
+  }
+
+  .publication-type-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .publication-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .publication-links {
+    width: 100%;
+    justify-content: center;
+  }
+}
