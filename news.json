@@ -1,0 +1,43 @@
+{
+  "lastUpdated": "2025-08-31T15:40:00.000Z",
+  "source": "GitHub Issues",
+  "count": 3,
+  "news": [
+    {
+      "id": "issue-1",
+      "title": "Published Paper on AI-Driven Snow Cover Mapping",
+      "date": "2024-12-15",
+      "description": "Excited to share that my research paper 'AI-Driven Snow Cover Mapping Using Sentinel-2 Imagery' has been published in the Journal of Remote Sensing Applications.\n\nKey findings:\n- Developed deep learning model with 94% accuracy\n- Processed over 10,000 Sentinel-2 images\n- Improved snow mapping efficiency by 40%\n\nThis research contributes to better understanding of hydrological processes in Arctic regions.",
+      "category": "Publication",
+      "image": "snow_mapping_research.jpg",
+      "link": "https://doi.org/10.1234/example-paper",
+      "source": "github-issue",
+      "issueNumber": 1,
+      "updatedAt": "2024-12-15T10:30:00Z"
+    },
+    {
+      "id": "issue-2", 
+      "title": "Presenting at International Remote Sensing Conference",
+      "date": "2024-11-20",
+      "description": "I will be presenting my research on 'Machine Learning Applications in Hydrological Modeling' at the International Conference on Remote Sensing and GIS Applications.\n\nPresentation details:\n- Date: December 5-7, 2024\n- Location: Helsinki, Finland\n- Session: AI in Environmental Monitoring\n\nLooking forward to sharing insights and networking with fellow researchers!",
+      "category": "Conference",
+      "image": "conference_presentation.jpg",
+      "link": "https://conference-example.com",
+      "source": "github-issue",
+      "issueNumber": 2,
+      "updatedAt": "2024-11-20T14:15:00Z"
+    },
+    {
+      "id": "issue-3",
+      "title": "Awarded Best Student Research Paper",
+      "date": "2024-10-28",
+      "description": "Honored to receive the Best Student Research Paper award at the Nordic Remote Sensing Symposium for my work on 'Deep Learning for Arctic Snow Cover Analysis'.\n\nThis recognition motivates me to continue pushing the boundaries of AI applications in environmental research.",
+      "category": "Achievement", 
+      "image": "award_ceremony.jpg",
+      "link": null,
+      "source": "github-issue",
+      "issueNumber": 3,
+      "updatedAt": "2024-10-28T16:45:00Z"
+    }
+  ]
+}
