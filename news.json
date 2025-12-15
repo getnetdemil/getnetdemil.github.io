@@ -3,18 +3,6 @@
   "source": "GitHub Issues",
   "count": 3,
   "news": [
-        {
-      "id": "issue-1",
-      "title": "The Digital Waters Flagship Biannual Meeting, Espoo, Finland",
-      "date": "2025-11-05",
-      "description": "Grateful to have shared our CrossFuse research at the Digital Waters Flagship Biannual Meeting this week! Our hybrid CNN-Transformer architecture tackles the challenge of fusing Sentinel-1 SAR and Sentinel-2 optical data for high-resolution snow cover estimation, critical for water resource management. Thanks to Aalto University for hosting and to all attendees for the insightful conversations. Paper coming soon! ",
-      "category": "Conference",
-      "image": "https://www.linkedin.com/feed/update/urn:li:activity:7392162365573660672/",
-      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7392162365573660672/",
-      "source": "github-issue",
-      "issueNumber": 1,
-      "updatedAt": "2024-12-15T10:30:00Z"
-    },
     {
       "id": "issue-1",
       "title": "CVPR 2025 Conference Participation in Nashville, USA",
@@ -38,6 +26,18 @@
       "source": "github-issue",
       "issueNumber": 2,
       "updatedAt": "2024-11-20T14:15:00Z"
+    },
+    {
+      "id": "issue-1",
+      "title": "The Digital Waters Flagship Biannual Meeting, Espoo, Finland",
+      "date": "2025-11-05",
+      "description": "Grateful to have shared our CrossFuse research at the Digital Waters Flagship Biannual Meeting this week! Our hybrid CNN-Transformer architecture tackles the challenge of fusing Sentinel-1 SAR and Sentinel-2 optical data for high-resolution snow cover estimation, critical for water resource management. Thanks to Aalto University for hosting and to all attendees for the insightful conversations. Paper coming soon! ",
+      "category": "Conference",
+      "image": "https://www.linkedin.com/feed/update/urn:li:activity:7392162365573660672/",
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7392162365573660672/",
+      "source": "github-issue",
+      "issueNumber": 1,
+      "updatedAt": "2024-12-15T10:30:00Z"
     }
   ]
 }
